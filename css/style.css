@@ -135,10 +135,10 @@ button, input { font: inherit; }
 
 /* ---------- Головна: Hero ---------- */
 .hero-home { position: relative; overflow: hidden; background: var(--green-tint); padding: 80px var(--pad-x); }
-.hero-home__photo { position: absolute; inset: 0 0 0 42%; }
+.hero-home__photo { position: absolute; inset: 0; background: url("../img/photos/hero-home.jpg") right center / cover no-repeat; }
 .hero-home__photo::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(90deg, var(--green-tint) 0%, rgba(237, 242, 230, 0) 45%);
+  background: linear-gradient(90deg, var(--green-tint) 0%, rgba(237, 242, 230, .92) 40%, rgba(237, 242, 230, 0) 70%);
 }
 .hero-home__content { position: relative; display: flex; flex-direction: column; gap: 20px; max-width: 760px; }
 .hero-home__eyebrow { color: var(--text); }
@@ -311,7 +311,7 @@ button, input { font: inherit; }
 .hem-hero { display: grid; grid-template-columns: 780px 380px; gap: 20px; justify-content: space-between; }
 .hem-hero__main { display: flex; flex-direction: column; gap: 40px; }
 .hem-hero__text { display: flex; flex-direction: column; gap: 20px; }
-.hem-hero__photo { border-radius: 40px; min-height: 474px; }
+.hem-hero__photo { border-radius: 40px; min-height: 474px; background: url("../img/photos/hero-hem.jpg") center / cover no-repeat; }
 .facts {
   display: flex; gap: 20px; align-items: stretch; background: var(--white);
   border: 1px solid var(--border); border-radius: 24px; padding: 40px;
@@ -514,7 +514,7 @@ button, input { font: inherit; }
   .hero-home__content { padding: 0 20px; gap: 20px; }
   .hero-home__eyebrow { color: var(--purple); }
   .accent-line { width: 64px; height: 5px; }
-  .hero-home__photo-m { display: block; height: 240px; margin: 20px -20px 0; }
+  .hero-home__photo-m { display: block; height: 240px; margin: 20px -20px 0; background: url("../img/photos/hero-home.jpg") 80% center / cover no-repeat; }
   .hero-home__buttons { flex-direction: column; margin-top: 20px; }
   .stats { grid-template-columns: 1fr 1fr; margin: 40px 20px 0; }
   .stat { border-radius: 20px; gap: 4px; }
